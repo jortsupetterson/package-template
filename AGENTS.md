@@ -227,6 +227,12 @@ Use ReSpec:
 - EdDSA for JOSE — [https://www.rfc-editor.org/rfc/rfc8037.html](https://www.rfc-editor.org/rfc/rfc8037.html)
 - IANA JOSE Registries — [https://www.iana.org/assignments/jose/jose.xhtml](https://www.iana.org/assignments/jose/jose.xhtml)
 
+### Ideas
+
+- KERI — [https://trustoverip.github.io/kswg-keri-specification/](https://trustoverip.github.io/kswg-keri-specification/)
+- ACDA — [https://trustoverip.github.io/kswg-acdc-specification/][https://trustoverip.github.io/kswg-acdc-specification/s]
+- CESR — [https://trustoverip.github.io/kswg-cesr-specification/](https://trustoverip.github.io/kswg-cesr-specification/)
+
 ---
 
 # Cloudflare Workers Discipline
