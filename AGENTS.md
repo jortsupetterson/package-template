@@ -26,6 +26,10 @@ Follow ReSpec documentation and ecosystem guidance:
 
 Use these as the default normative sources:
 
+**Keywords**
+
+- https://www.rfc-editor.org/rfc/rfc2119.html
+
 **Infra / general**
 
 - WHATWG Infra — https://infra.spec.whatwg.org/
