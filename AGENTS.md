@@ -17,6 +17,19 @@ https://www.rfc-editor.org/rfc/rfc2119.html
 
 ---
 
+# Verification
+
+Run the smallest set of checks that covers your change.
+
+- If you change runtime logic or public API: `npm run test`.
+- If you touch benchmarks or performance-sensitive code: `npm run bench`.
+- If you modify TypeScript build config or emit-related logic: `npm run build`.
+- If you change formatting or add files: `npm run format`.
+
+If a required command cannot run in the current environment, state that explicitly and explain why.
+
+---
+
 # Architectural Principles
 
 ## 1. Minimal Surface Area
@@ -28,6 +41,7 @@ Each unit:
 - MUST contain at most one root-level `.ts` file.
 - MUST export at most one top-level class OR one top-level function.
 - SHOULD remain under ~100 lines of executable logic (imports and type-only declarations excluded).
+- The ~100 line budget counts executable statements only and excludes imports, type-only exports, comments, and blank lines.
 - MUST have a single, clear responsibility.
 
 If complexity grows:
@@ -49,6 +63,8 @@ Reimplementation of common infrastructure logic is forbidden.
 
 If boilerplate appears repeatedly, dependency evaluation is mandatory.
 
+Dependency evaluation MUST consider maintenance activity within the last 12 months, license compatibility, known security advisories, API stability, and real-world adoption. Record the decision in change notes or the PR description.
+
 ---
 
 ## 3. Helpers
@@ -61,6 +77,8 @@ If helpers are unavoidable:
 - They MUST NOT contain domain logic.
 
 A growing `.helpers/` directory indicates architectural drift.
+
+Domain logic means business rules, policy decisions, and data model validation specific to this package. It excludes encoding/decoding, crypto, serialization, I/O, and generic data plumbing.
 
 ---
 
@@ -120,6 +138,7 @@ export class PackageNameError extends Error {
 Rules:
 
 - Error codes MUST be semantic string literals.
+- Error codes MUST be SCREAMING_SNAKE_CASE and use short domain prefixes when needed (example: `CRYPTO_INVALID_KEY`).
 - Throwing raw `Error` is forbidden.
 - Every thrown error MUST map to an explicit error code.
 - Error messages MUST include package scope.
@@ -138,11 +157,15 @@ Errors are part of the public contract.
 
 Architecture must remain explicit and auditable.
 
+Example disallowed: `.helpers/` importing from `src/domain/*`, or `.types/` importing from runtime code.
+
 ---
 
 # Specification Discipline (`index.html`)
 
 When working on `(cwd | root | .)/index.html`:
+
+This applies only when `index.html` exists or a task explicitly asks to create it. Otherwise, do not create or modify it.
 
 ## Authoring Tool
 
@@ -165,8 +188,10 @@ Use ReSpec:
 
 - DID Core v1.0 — [https://www.w3.org/TR/did-core/](https://www.w3.org/TR/did-core/)
 - DID Core v1.1 — [https://www.w3.org/TR/did-1.1/](https://www.w3.org/TR/did-1.1/)
+- DID Test Suite — [https://w3c.github.io/did-test-suite/](https://w3c.github.io/did-test-suite/)
 - VC Data Model v2.0 — [https://www.w3.org/TR/vc-data-model-2.0/](https://www.w3.org/TR/vc-data-model-2.0/)
 - VC Overview — [https://www.w3.org/TR/vc-overview/](https://www.w3.org/TR/vc-overview/)
+- VC Test Suite — [https://w3c.github.io/vc-test-suite/](https://w3c.github.io/vc-test-suite/)
 
 ### JSON-LD / RDF
 
@@ -174,6 +199,7 @@ Use ReSpec:
 - JSON-LD API — [https://www.w3.org/TR/json-ld11-api/](https://www.w3.org/TR/json-ld11-api/)
 - RDF Concepts — [https://www.w3.org/TR/rdf11-concepts/](https://www.w3.org/TR/rdf11-concepts/)
 - RDF Schema — [https://www.w3.org/TR/rdf-schema/](https://www.w3.org/TR/rdf-schema/)
+- Schema Org — [https://schema.org/docs/schemas.html](https://schema.org/docs/schemas.html)
 
 ### WebCrypto
 
@@ -205,6 +231,7 @@ Before any task involving Workers, KV, R2, D1, Durable Objects, Queues, Vectoriz
 - Retrieve current documentation.
 - Verify platform limits.
 - Confirm API behavior against official docs.
+- If documentation cannot be retrieved due to environment restrictions, request permission to browse and state the limitation.
 
 ## Documentation Entry Points
 
@@ -242,7 +269,3 @@ Dependency over reinvention.
 No hidden state.
 
 Architecture is a constraint system, not a suggestion.
-
-```
-
-```
