@@ -32,6 +32,7 @@ Use these as the default normative sources:
 
 **Infra / general**
 
+- ECMA262 -- https://tc39.es/ecma262/
 - WHATWG Infra — https://infra.spec.whatwg.org/
 
 **Identifiers / Credentials**
