@@ -182,16 +182,23 @@ Use ReSpec:
 
 - ECMA-262 — [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
 - WHATWG Infra — [https://infra.spec.whatwg.org/](https://infra.spec.whatwg.org/)
+- Infra Extension — [https://www.w3.org/TR/xmlschema11-2/](https://www.w3.org/TR/xmlschema11-2/)
 - Base64Url — [https://base64.guru/standards/base64url](https://base64.guru/standards/base64url)
+- JSON — [https://www.rfc-editor.org/rfc/rfc8259](https://www.rfc-editor.org/rfc/rfc8259)
+- URI — [https://www.rfc-editor.org/rfc/rfc3986](https://www.rfc-editor.org/rfc/rfc3986)
 
 ### Identifiers / Credentials
 
+- DID Use Cases — [https://www.w3.org/TR/did-use-cases/](https://www.w3.org/TR/did-use-cases/)
 - DID Core v1.0 — [https://www.w3.org/TR/did-core/](https://www.w3.org/TR/did-core/)
 - DID Core v1.1 — [https://www.w3.org/TR/did-1.1/](https://www.w3.org/TR/did-1.1/)
 - DID Test Suite — [https://w3c.github.io/did-test-suite/](https://w3c.github.io/did-test-suite/)
+- DID Extensions — [https://www.w3.org/TR/did-extensions/](https://www.w3.org/TR/did-extensions/)
+
 - VC Data Model v2.0 — [https://www.w3.org/TR/vc-data-model-2.0/](https://www.w3.org/TR/vc-data-model-2.0/)
 - VC Overview — [https://www.w3.org/TR/vc-overview/](https://www.w3.org/TR/vc-overview/)
 - VC Test Suite — [https://w3c.github.io/vc-test-suite/](https://w3c.github.io/vc-test-suite/)
+- Distributed Ledger Technologies — [https://en.wikipedia.org/wiki/Distributed_ledger](https://en.wikipedia.org/wiki/Distributed_ledger)
 
 ### JSON-LD / RDF
 
