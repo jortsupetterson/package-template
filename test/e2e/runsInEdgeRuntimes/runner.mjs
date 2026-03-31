@@ -9,6 +9,7 @@ import {
 
 const root = process.cwd()
 const esmDistPath = resolve(root, 'dist', 'index.js')
+/** update to current package */
 
 function toExecutableEdgeEsm(bundleCode) {
   if (/\bimport\s+[\s\S]+?\bfrom\b/.test(bundleCode))

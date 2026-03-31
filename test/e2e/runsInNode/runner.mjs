@@ -8,6 +8,7 @@ import {
 
 const require = createRequire(import.meta.url)
 const cjsApi = require('../../../dist/index.cjs')
+/** update to current package */
 
 for (const [label, api] of [
   ['node esm', esmApi],

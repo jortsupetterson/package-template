@@ -8,3 +8,4 @@ import {
 const results = await runBytecodecSuite(api, { label: 'deno esm' })
 printResults(results)
 ensurePassing(results)
+/** update to current package */

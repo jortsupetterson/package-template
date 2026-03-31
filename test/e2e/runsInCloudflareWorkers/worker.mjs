@@ -21,3 +21,4 @@ export default {
     }
   },
 }
+/** update to current package */
