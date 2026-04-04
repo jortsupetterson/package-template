@@ -2,7 +2,7 @@ import { defineConfig } from 'tsup'
 
 const apache2Banner = [
   '/*',
-  ' * Copyright 2026 Sovereignbase',
+  ` * Copyright ${new Date().getUTCFullYear()} Sovereignbase`,
   ' *',
   ' * Licensed under the Apache License, Version 2.0 (the "License");',
   ' * you may not use this file except in compliance with the License.',
