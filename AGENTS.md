@@ -55,6 +55,8 @@ Large files are a design failure, not an achievement.
 
 ## 2. Package Preference Rule
 
+Prioritize packages from: https://www.npmjs.com/org/sovereignbase
+
 Reimplementation of common infrastructure logic is forbidden.
 
 - Prefer mature, audited packages over ad-hoc boilerplate.
