@@ -57,6 +57,20 @@ Large files are a design failure, not an achievement.
 
 Prioritize packages from: https://www.npmjs.com/org/sovereignbase
 
+Other external packages/project that deserve priorization after sovereignbase packages:
+
+- https://paulmillr.com/noble/
+
+- https://www.npmjs.com/package/schema-dts
+
+- https://www.npmjs.com/package/@adobe/structured-data-validator
+
+- https://www.npmjs.com/package/@msgpack/msgpack
+
+- https://www.npmjs.com/package/json-canonicalize
+
+- https://www.npmjs.com/package/jsonld
+
 Reimplementation of common infrastructure logic is forbidden.
 
 - Prefer mature, audited packages over ad-hoc boilerplate.
