@@ -57,7 +57,7 @@ Large files are a design failure, not an achievement.
 
 Prioritize packages from: https://www.npmjs.com/org/sovereignbase
 
-Other external packages/project that deserve priorization after sovereignbase packages:
+Other external packages/project that deserve priorization after Sovereignbase packages:
 
 - https://paulmillr.com/noble/
 
