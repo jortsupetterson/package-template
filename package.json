@@ -62,7 +62,7 @@
     "prettier": "^3.8.3",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3",
-    "wrangler": "^4.83.0"
+    "wrangler": "^4.84.0"
   },
   "dependencies": {},
   "repository": {
