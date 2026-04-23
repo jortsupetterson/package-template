@@ -451,6 +451,7 @@ color: #fff;
 
 ```html
  <title></title>
+  <meta name="color-scheme" content="dark" />
     <meta
       name="description"
       content=""

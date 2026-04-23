@@ -61,10 +61,10 @@
     "playwright": "^1.59.1",
     "prettier": "^3.8.3",
     "tsup": "^8.5.1",
+    "typedoc": "^0.28.19",
     "typescript": "^5.9.3",
-    "wrangler": "^4.84.0"
+    "wrangler": "^4.84.1"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sovereignbase/package-name.git"
@@ -72,5 +72,5 @@
   "bugs": {
     "url": "https://github.com/sovereignbase/package-name/issues"
   },
-  "homepage": "https://github.com/sovereignbase/package-name#readme"
+  "homepage": "https://sovereignbase.dev/package-name"
 }
