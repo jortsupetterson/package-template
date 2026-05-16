@@ -5,7 +5,7 @@ export class PackageNameError extends Error {
 
   constructor(code: PackageNameErrorCode, message?: string) {
     const detail = message ?? code
-    super(`{@z-base/package-name} ${detail}`)
+    super(`{@sovereignbase/package-name} ${detail}`)
     this.code = code
     this.name = 'PackageNameError'
   }
