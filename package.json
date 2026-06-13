@@ -20,9 +20,6 @@
     },
     "./package.json": "./package.json"
   },
-  "engines": {
-    "node": ">=20"
-  },
   "files": [
     "dist",
     "LICENSE",
@@ -49,21 +46,22 @@
       "playwright.config.ts"
     ]
   },
+  "dependencies": {},
   "devDependencies": {
-    "@commitlint/cli": "^21.0.1",
-    "@commitlint/config-conventional": "^21.0.1",
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
     "@playwright/test": "^1.60.0",
-    "@types/node": "^25.8.0",
+    "@types/node": "^25.9.3",
     "c8": "^11.0.0",
     "edge-runtime": "^4.0.1",
     "fast-glob": "^3.3.3",
     "husky": "^9.1.7",
     "playwright": "^1.60.0",
-    "prettier": "^3.8.3",
-    "tsup": "^8.5.1",
+    "prettier": "^3.8.4",
+    "tsdown": "^0.22.2",
     "typedoc": "^0.28.19",
-    "typescript": "^5.9.3",
-    "wrangler": "4.86.0"
+    "typescript": "^6.0.3",
+    "wrangler": "4.100.0"
   },
   "repository": {
     "type": "git",
